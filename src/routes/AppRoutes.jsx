@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from 'react'
 import MainLayout from "../components/layouts/MainLayout";
 import Home from "../pages/Home/Home";
-import Login from "../pages/Login/login";
+import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import ProtectedRoute from "./ProtectedRoute";
