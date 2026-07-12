@@ -1,6 +1,6 @@
 import "./ExploreBusiness.css";
 import { useEffect, useState } from "react";
-import { getAllBusinesses, searchBusinesses } from "../../services/businessService";
+import { getAllBusinesses, searchBusinesses } from "../../Services/businessService";
 import { Link } from "react-router-dom";
 import appLogo from "../../assets/images/hero1.png";
 import toast from "react-hot-toast";
