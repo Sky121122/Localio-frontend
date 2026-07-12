@@ -1,0 +1,283 @@
+.explore-page{
+
+    max-width: 100%;
+
+    margin:auto;
+
+    padding:10px 10px;
+
+}
+
+.explore-page h1{
+
+    margin-bottom:30px;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    margin-bottom:30px;
+
+    font-size:16px;
+
+}
+
+.business-grid{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.business-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    border:1px solid #eee;
+
+    transition:.3s;
+
+}
+
+.business-item:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.business-item img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    margin-right:18px;
+
+}
+
+.business-item>div{
+
+    flex:1;
+
+}
+
+.business-item h3{
+
+    margin-bottom:6px;
+
+}
+
+.business-item p{
+
+    color: var(--danger);
+
+    font-weight:600;
+
+}
+
+.view-btn{
+
+    background: var(--danger);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+}
+.filter-row{
+    display:flex;
+    gap:15px;
+    margin:20px 0 30px;
+    flex-wrap:wrap;
+}
+
+.filter-row select,
+.filter-row input{
+    flex:1;
+    min-width:220px;
+    padding:12px 15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.filter-row select:focus,
+.filter-row input:focus{
+    border-color: var(--primary);
+}
+
+/* ==========================================
+   Explore Responsive
+========================================== */
+
+@media (max-width:992px){
+
+    .explore-page{
+        padding:10px;
+    }
+
+    .business-item{
+        padding:18px;
+    }
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:768px){
+
+    .explore-page h1{
+        font-size:28px;
+        margin-bottom:20px;
+    }
+
+    .search-box{
+        padding:14px;
+        font-size:15px;
+        margin-bottom:20px;
+    }
+
+    .filter-row{
+        gap:12px;
+        margin:15px 0 20px;
+    }
+
+    .filter-row input,
+    .filter-row select{
+        min-width:100%;
+    }
+
+    .business-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+    }
+
+    .business-item img{
+        width:100%;
+        height:220px;
+        margin-right:0;
+        margin-bottom:10px;
+        border-radius:12px;
+    }
+
+    .business-item>div{
+        width:100%;
+    }
+
+    .business-item h3{
+        font-size:20px;
+    }
+
+    .business-item p{
+        font-size:15px;
+    }
+
+    .view-btn{
+        width:100%;
+        text-align:center;
+        padding:13px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:576px){
+
+    .explore-page{
+        padding:5px;
+    }
+
+    .explore-page h1{
+        font-size:24px;
+    }
+
+    .search-box{
+        padding:13px;
+        font-size:14px;
+    }
+
+    .filter-row{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .filter-row input,
+    .filter-row select{
+        width:100%;
+        padding:12px;
+        font-size:14px;
+    }
+
+    .business-item{
+        padding:15px;
+        border-radius:14px;
+    }
+
+    .business-item img{
+        height:180px;
+    }
+
+    .business-item h3{
+        font-size:18px;
+    }
+
+    .business-item p{
+        font-size:14px;
+    }
+
+    .view-btn{
+        padding:12px;
+        font-size:14px;
+    }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:400px){
+
+    .business-item img{
+        height:160px;
+    }
+
+    .business-item{
+        padding:12px;
+    }
+
+    .business-item h3{
+        font-size:17px;
+    }
+
+}

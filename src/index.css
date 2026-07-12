@@ -1,0 +1,31 @@
+@import "./styles/reset.css";
+@import "./styles/variables.css";
+@import "./styles/typography.css";
+@import "./styles/global.css";
+@import "./styles/utilities.css";
+@import "./styles/animations.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

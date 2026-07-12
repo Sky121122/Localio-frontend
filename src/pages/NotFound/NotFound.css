@@ -1,0 +1,129 @@
+.notfound-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f5f7fb;
+
+    padding:30px;
+
+}
+
+.notfound-card{
+
+    width:100%;
+    max-width:550px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.notfound-card h1{
+
+    font-size:110px;
+
+    color: var(--primary);
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.notfound-card h2{
+
+    font-size:30px;
+
+    color:#222;
+
+    margin-bottom:15px;
+
+}
+
+.notfound-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+
+}
+
+.notfound-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.back-btn,
+.home-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:13px 28px;
+
+    border-radius:10px;
+
+    border:none;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.back-btn{
+
+    background:#f1f5f9;
+
+    color:#333;
+
+}
+
+.back-btn:hover{
+
+    background:#dbeafe;
+
+}
+
+.home-btn{
+
+    background: var(--primary);
+
+    color:#fff;
+
+}
+
+.home-btn:hover{
+
+    background:#1d4ed8;
+
+}

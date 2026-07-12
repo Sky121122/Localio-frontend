@@ -1,0 +1,110 @@
+.dashboard-layout{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+/* =========================
+   Sidebar Space (Desktop)
+========================= */
+
+.dashboard-main{
+    flex:1;
+    margin-left:280px;
+    padding:35px;
+    transition:.3s;
+}
+
+/* =========================
+   Mobile Header
+========================= */
+
+.mobile-header{
+    display:none;
+    height:65px;
+    background:#fff;
+    border-radius:12px;
+    padding:0 18px;
+    margin-bottom:20px;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+
+    align-items:center;
+    gap:15px;
+}
+
+.mobile-header h2{
+    font-size:22px;
+    color:#22c55e;
+}
+
+.menu-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    background:#22c55e;
+    color:#fff;
+    border-radius:10px;
+    font-size:22px;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s;
+}
+
+.menu-btn:hover{
+    background:#16a34a;
+}
+
+/* =========================
+   Overlay
+========================= */
+
+.sidebar-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:999;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width:900px){
+
+    .dashboard-main{
+        margin-left:0;
+        padding:20px;
+        width:100%;
+    }
+
+    .mobile-header{
+        display:flex;
+    }
+
+    .sidebar{
+
+        position:fixed !important;
+
+        top:0;
+        left:-300px;
+
+        width:280px !important;
+        height:100vh !important;
+
+        z-index:1000;
+
+        transition:.35s ease;
+
+    }
+
+    .sidebar.open{
+
+        left:0;
+
+    }
+
+}

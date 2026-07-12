@@ -1,0 +1,549 @@
+.business-page {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================= Banner ================= */
+
+.business-page .banner-section {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.business-page .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= Profile ================= */
+
+.business-page .profile-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    margin-top: -70px;
+    padding: 0 35px;
+}
+
+.business-page .logo-wrapper {
+    width: 165px;
+    height: 165px;
+    border-radius: 10%;
+    overflow: hidden;
+    border: 6px solid #f5f5f5;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+    flex-shrink: 0;
+}
+
+.business-page .business-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.business-page .profile-content {
+    flex: 1;
+    margin-top: 40px;
+    height: auto;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+    background-color: white;
+}
+
+.business-page .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.business-page .title-row h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #222;
+}
+
+.business-page .tagline {
+    margin-top: 10px;
+    color: #666;
+    font-size: 17px;
+}
+
+/* ================= Badges ================= */
+
+.business-page .badge-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.business-page .category-badge,
+.business-page .type-badge {
+    background: #16a34a;
+    color: #f5f5f5;
+    /* color: #16a34a; */
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.business-page .status-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #16a34a;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ================= Buttons ================= */
+
+.business-page .action-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.business-page .action-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 14px 24px;
+    background: #16a34a;
+    color: white;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.business-page .action-buttons a:hover {
+    background: #10B981;
+    transform: translateY(-3px);
+}
+
+/* ================= Info ================= */
+
+.business-page .info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 22px;
+}
+
+.business-page .info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.business-page .info-card:hover {
+    transform: translateY(-5px);
+}
+
+.business-page .info-card .icon {
+    color: #16a34a;
+    font-size: 26px;
+}
+
+.business-page .info-card h4 {
+    margin: 0;
+    color: #333;
+}
+
+.business-page .info-card p {
+    margin-top: 8px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.business-page .address-card {
+    grid-column: span 2;
+}
+
+/* ================= About ================= */
+
+.business-page .about-section {
+    margin-top: 45px;
+    padding: 35px;
+    width: 100%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.business-page .about-section h2 {
+    margin-bottom: 18px;
+    color: #222;
+    text-align: left;
+}
+
+.business-page .about-section p {
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* ================= Social ================= */
+
+.business-page .social-section {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.business-page .social-section h2 {
+    margin-bottom: 20px;
+}
+
+.business-page .social-icons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.business-page .social-icons a {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #EF4444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.business-page .social-icons a:hover {
+    background: black;
+    color: white;
+    transform: scale(1.08);
+}
+
+/* ================= Loading ================= */
+
+.business-page .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width:900px){
+
+.business-page .profile-section{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-top:-60px;
+    padding:0;
+}
+
+.business-page .title-row{
+    flex-direction:column;
+}
+
+.business-page .action-buttons{
+    justify-content:center;
+}
+
+.business-page .address-card{
+    grid-column:span 1;
+}
+
+}
+
+@media (max-width:600px){
+
+.business-page{
+    padding:15px;
+}
+
+.business-page .banner-section{
+    height:220px;
+}
+
+.business-page .logo-wrapper{
+    width:120px;
+    height:120px;
+}
+
+.business-page .title-row h1{
+    font-size:28px;
+}
+
+.business-page .action-buttons a{
+    width:100%;
+    justify-content:center;
+}
+
+.business-page .about-section,
+.business-page .social-section{
+    padding:20px;
+}
+
+}
+/* ==========================================
+   Business Details Responsive
+========================================== */
+
+/* ---------- Large Tablet ---------- */
+
+@media (max-width:992px){
+
+    .business-page{
+        padding:18px;
+    }
+
+    .business-page .banner-section{
+        height:300px;
+    }
+
+    .business-page .profile-section{
+        gap:22px;
+        padding:0 20px;
+    }
+
+    .business-page .profile-content{
+        padding:20px 25px;
+    }
+
+    .business-page .title-row h1{
+        font-size:30px;
+    }
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:768px){
+
+    .business-page{
+        padding:15px;
+    }
+
+    .business-page .banner-section{
+        height:240px;
+        border-radius:16px;
+    }
+
+    .business-page .profile-section{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        margin-top:-55px;
+        padding:0;
+        gap:20px;
+    }
+
+    .business-page .logo-wrapper{
+        width:130px;
+        height:130px;
+        border-width:5px;
+    }
+
+    .business-page .profile-content{
+        width:100%;
+        margin-top:0;
+        padding:22px;
+    }
+
+    .business-page .title-row{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .business-page .title-row h1{
+        font-size:28px;
+    }
+
+    .business-page .tagline{
+        font-size:15px;
+    }
+
+    .business-page .badge-row{
+        justify-content:center;
+    }
+
+    .business-page .action-buttons{
+        justify-content:center;
+        margin:30px 0;
+    }
+
+    .business-page .action-buttons a{
+        flex:1;
+        justify-content:center;
+        min-width:180px;
+    }
+
+    .business-page .info-section{
+        grid-template-columns:1fr;
+    }
+
+    .business-page .address-card{
+        grid-column:span 1;
+    }
+
+    .business-page .info-card{
+        padding:20px;
+    }
+
+    .business-page .about-section,
+    .business-page .social-section{
+        padding:25px;
+    }
+
+    .business-page .social-icons{
+        justify-content:center;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:576px){
+
+    .business-page{
+        padding:10px;
+    }
+
+    .business-page .banner-section{
+        height:190px;
+        border-radius:14px;
+    }
+
+    .business-page .logo-wrapper{
+        width:110px;
+        height:110px;
+    }
+
+    .business-page .profile-content{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .business-page .title-row h1{
+        font-size:24px;
+    }
+
+    .business-page .tagline{
+        font-size:14px;
+    }
+
+    .business-page .category-badge,
+    .business-page .type-badge,
+    .business-page .status-badge{
+        font-size:12px;
+        padding:8px 14px;
+    }
+
+    .business-page .action-buttons{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .business-page .action-buttons a{
+        width:100%;
+        padding:13px;
+    }
+
+    .business-page .info-card{
+        padding:18px;
+        gap:15px;
+    }
+
+    .business-page .info-card .icon{
+        font-size:22px;
+    }
+
+    .business-page .info-card h4{
+        font-size:17px;
+    }
+
+    .business-page .info-card p{
+        font-size:14px;
+    }
+
+    .business-page .about-section,
+    .business-page .social-section{
+        padding:20px;
+        border-radius:16px;
+    }
+
+    .business-page .about-section h2,
+    .business-page .social-section h2{
+        font-size:22px;
+    }
+
+    .business-page .about-section p{
+        font-size:14px;
+        text-align:left;
+    }
+
+    .business-page .social-icons{
+        justify-content:center;
+        gap:15px;
+    }
+
+    .business-page .social-icons a{
+        width:48px;
+        height:48px;
+        font-size:18px;
+    }
+
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:400px){
+
+    .business-page .banner-section{
+        height:170px;
+    }
+
+    .business-page .logo-wrapper{
+        width:95px;
+        height:95px;
+    }
+
+    .business-page .title-row h1{
+        font-size:21px;
+    }
+
+    .business-page .profile-content,
+    .business-page .about-section,
+    .business-page .social-section{
+        padding:15px;
+    }
+
+    .business-page .social-icons a{
+        width:44px;
+        height:44px;
+        font-size:17px;
+    }
+
+}

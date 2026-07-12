@@ -1,0 +1,187 @@
+.sidebar{
+
+    width:280px;
+
+    height:100vh;
+
+    background:white;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:0 0 25px rgba(0,0,0,.08);
+
+    padding:30px 20px;
+
+}
+
+.logo{
+
+    text-align:center;
+
+}
+
+.logo h2{
+
+    color:#22c55e;
+
+    font-size:30px;
+
+}
+
+.user-box{
+
+    margin-top:20px;
+
+    text-align:center;
+
+}
+
+.avatar{
+    width:80px;
+    height:80px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.user-box h3{
+
+    margin-top:10px;
+
+    color:#222;
+
+}
+
+.user-box p{
+
+    color:gray;
+
+    font-size:14px;
+
+    margin-top:5px;
+
+}
+
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    margin-top:35px;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#555;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.menu a svg{
+
+    font-size:20px;
+
+}
+
+.menu a:hover{
+
+    background:#22c55e;
+
+    color:white;
+
+}
+
+.menu .active{
+
+    background:#22c55e;
+
+    color:white;
+
+}
+
+.logout-btn{
+
+    border:none;
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#dc2626;
+
+}
+
+@media(max-width:900px){
+
+.sidebar{
+
+    width:100%;
+
+    height:auto;
+
+    position:relative;
+
+}
+
+}
