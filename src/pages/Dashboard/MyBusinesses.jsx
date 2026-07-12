@@ -4,7 +4,7 @@ import { AuthContext } from "../../context/AuthContext";
 import {
     getMyBusinesses,
     deleteBusiness
-} from "../../services/businessService";
+} from "../../Services/businessService";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import appLogo from "../../assets/images/hero1.png";
