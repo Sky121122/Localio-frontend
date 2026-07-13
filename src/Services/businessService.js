@@ -43,3 +43,11 @@ export const searchBusinesses = async (q, category = "", city = "") => {
 
     return res.data;
 };
+
+export const increaseViews = async (id) => {
+
+    const res = await axios.put(`${API}/view/${id}`);
+
+    return res.data;
+
+};

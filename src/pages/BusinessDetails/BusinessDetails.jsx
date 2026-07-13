@@ -1,6 +1,7 @@
 import "./BusinessDetails.css";
 
 import { useEffect, useState } from "react";
+
 import { useParams } from "react-router-dom";
 
 import {
@@ -20,6 +21,7 @@ import {
 } from "react-icons/fa";
 
 import { getBusinessById } from "../../Services/businessService";
+import { increaseViews } from "../../Services/businessService";
 
 import appLogo from "../../assets/images/hero1.png";
 
@@ -32,10 +34,37 @@ function BusinessDetails() {
 
     const [business, setBusiness] = useState(null);
 
+
+    const handleViewCount = async () => {
+   console.log("handleViewCount called");
+    try {
+
+        const key = `business_view_${id}`;
+
+        const lastViewed = localStorage.getItem(key);
+
+        const DAY = 24 * 60 * 60 * 1000;
+
+        if (!lastViewed || Date.now() - Number(lastViewed) > DAY) {
+
+            await increaseViews(id);
+
+            localStorage.setItem(key, Date.now());
+
+        }
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+};
+
+
     useEffect(() => {
-
-        loadBusiness();
-
+         handleViewCount();
+         loadBusiness();
     }, []);
 
     const loadBusiness = async () => {
@@ -63,6 +92,40 @@ function BusinessDetails() {
         );
 
     }
+
+
+const handleWhatsAppShare = () => {
+
+    const businessUrl =
+        `https://skylocalio.netlify.app/business/${business._id}`;
+
+    const message = `*LOCALIO*
+
+Discover Local Businesses Near You
+
+----------------------------
+
+*${business.businessName}*
+
+Category: ${business.category}
+Location:
+${business.city}, ${business.address}
+Description:
+${business.description}
+
+----------------------------
+
+View Business Profile
+
+${businessUrl}
+
+Powered by Localio`;
+
+    window.open(
+        `https://wa.me/?text=${encodeURIComponent(message)}`,
+        "_blank"
+    );
+};
 
     return (
         <>
@@ -103,10 +166,10 @@ function BusinessDetails() {
 
                         <h1>{business.businessName}</h1>
 
+                      
                         <span className="status-badge">
-
                             <FaCheckCircle />
-
+                            
                             Active
 
                         </span>
@@ -131,6 +194,10 @@ function BusinessDetails() {
 
                             {business.businessType}
 
+                        </span>
+
+                        <span className="type-badge">
+                              <p>{business.views} Views</p>
                         </span>
 
                     </div>
@@ -179,6 +246,12 @@ function BusinessDetails() {
 
                 )}
 
+                    <a
+                    onClick={handleWhatsAppShare}>
+
+                    <FaWhatsapp />
+                    Share on Whatsapp
+                </a>
             </div>
 
             {/* Information */}
