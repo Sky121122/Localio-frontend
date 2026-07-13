@@ -1,7 +1,7 @@
 import axios  from "axios";
 import API_URL from "../config/api";
 
-const API = `${API_URL}/businesses`;
+const API = `${API_URL}/api/businesses`;
 
 export const addBusiness = async (businessData) => {
     const res = await axios.post(API, businessData);

@@ -2,7 +2,7 @@ import axios from "axios";
 import API_URL from "../config/api";
 
 
-const API = `${API_URL}/users`;
+const API = `${API_URL}/api/users`;
 
 
 export const saveUser = async (userData) =>{

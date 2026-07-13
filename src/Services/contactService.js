@@ -1,7 +1,7 @@
 import axios from "axios";
 import API_URL from "../config/api";
 
-const API = `${API_URL}/contact`
+const API = `${API_URL}/api/contact`
 
 export const sendContactMessage = async (data) => {
 

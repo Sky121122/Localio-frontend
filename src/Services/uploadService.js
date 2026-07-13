@@ -2,7 +2,7 @@ import axios from "axios";
 import API_URL from "../config/api";
 
 
-const Api = `${API_URL}/upload`;
+const Api = `${API_URL}/api/upload`;
 
 export const uploadImage = async(file)=>{
     const formData = new FormData();
